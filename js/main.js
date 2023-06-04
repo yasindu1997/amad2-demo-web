@@ -45,3 +45,5 @@ function loginUser(){
     document.getElementById('answer').innerHTML=email + " "+ password;
 }
 
+var age = 90;
+
