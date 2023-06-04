@@ -47,3 +47,5 @@ function loginUser(){
 
 var age = 90;
 
+var address = "Panadura"
+
