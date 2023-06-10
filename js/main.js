@@ -15,7 +15,7 @@ var isMarried = true;
 var x = 12;
 var y = 13;
 
-var answer = x+y; //+,-,*,/
+var answer = x+y; //+,-,*,/,%
 console.log(answer);
 
 //single line comment
@@ -48,4 +48,74 @@ function loginUser(){
 var age = 90;
 
 var address = "Panadura"
+
+
+//flow contollers ----> if/else / elseif / switch
+
+
+//true,false, a statement that genarates true or false
+
+var age = 16;
+
+if(age==18){
+    console.log("Enter")
+}else if(age==16){
+    console.log("Call Parents");
+}else if(age == 14){
+    console.log("call police");
+}
+else{
+    console.log("Helloooooooooooooo....")
+}
+
+//18> -----> home
+//username, password ----> home page
+//user ---> married ---> display x
+
+function getSum(){
+    var num1 = parseInt(document.getElementById("num1").value);
+    var num2 = parseInt(document.getElementById("num2").value);
+
+    alert(num1+num2);
+}
+
+//A family has three children
+//get each child's weight from user's input
+//find average
+//if avg.weight is greater than 55 alert no worries
+
+var val1 = 12;
+var val2 = 5;
+
+console.log(val1%val2);
+
+//>, <, >=, <=, == ,!=  ------> Relational operators
+
+console.log(val1>17 ? "Hiii" : "Hello"); //---->ternary
+
+//&&, || ----> logical operators
+
+if(val2>4 || val1==10){
+
+}
+
+var dbUserName = "admin@gmail.com";
+var password = "admin@123"
+
+var seen = 7;
+
+//control variable
+switch(seen){
+    case 5:
+        console.log("5 selected...");
+        break;
+    case 4:
+        console.log("4 selected....");
+        break;
+    case 7:
+        console.log("7 selected....");
+        break;
+    default:
+        console.log("Not Matched");
+}
 
