@@ -175,3 +175,23 @@ for(var i = 0; i<3; i++){
 }
 
 console.log(myVal);
+
+//////////////////////////////
+
+var dbUserName = "admin@gmail.com";
+var dbPassword = "admin@123";
+
+var userName = document.getElementById('email').value;
+var password = document.getElementById('password').value;
+
+if(userName==dbUserName && password==dbPassword){
+    alert("Login Success !");
+}else{
+    alert("Login Failed !");
+}
+
+
+function clearInputs(){
+    document.getElementById('email').value="";
+    document.getElementById('password').value="";
+}
