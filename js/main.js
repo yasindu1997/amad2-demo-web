@@ -7,7 +7,7 @@ var student_name = 90;
 
 var mark = 45.56;
 
-var grade  = 'A';
+var grade = 'A';
 
 var isMarried = true;
 
@@ -15,7 +15,7 @@ var isMarried = true;
 var x = 12;
 var y = 13;
 
-var answer = x+y; //+,-,*,/,%
+var answer = x + y; //+,-,*,/,%
 console.log(answer);
 
 //single line comment
@@ -25,24 +25,24 @@ multiline comment
 and you are a hero*/
 
 //function 
-function add(){
-   var firstNumber = 10;
-   var secondNumber = 8;
+function add() {
+    var firstNumber = 10;
+    var secondNumber = 8;
 
-   alert("Answer is "+(firstNumber+secondNumber));
-   console.log("Answer is "+(firstNumber+secondNumber));
+    alert("Answer is " + (firstNumber + secondNumber));
+    console.log("Answer is " + (firstNumber + secondNumber));
 }
 
 //function calling statment
 // add();
 
-function loginUser(){
+function loginUser() {
     var email = document.getElementById("email").value;
     var password = document.getElementById("password").value;
 
-    console.log(email + " "+ password);
+    console.log(email + " " + password);
 
-    document.getElementById('answer').innerHTML=email + " "+ password;
+    document.getElementById('answer').innerHTML = email + " " + password;
 }
 
 var age = 90;
@@ -57,14 +57,14 @@ var address = "Panadura"
 
 var age = 16;
 
-if(age==18){
+if (age == 18) {
     console.log("Enter")
-}else if(age==16){
+} else if (age == 16) {
     console.log("Call Parents");
-}else if(age == 14){
+} else if (age == 14) {
     console.log("call police");
 }
-else{
+else {
     console.log("Helloooooooooooooo....")
 }
 
@@ -72,11 +72,11 @@ else{
 //username, password ----> home page
 //user ---> married ---> display x
 
-function getSum(){
+function getSum() {
     var num1 = parseInt(document.getElementById("num1").value);
     var num2 = parseInt(document.getElementById("num2").value);
 
-    alert(num1+num2);
+    alert(num1 + num2);
 }
 
 //A family has three children
@@ -87,15 +87,15 @@ function getSum(){
 var val1 = 12;
 var val2 = 5;
 
-console.log(val1%val2);
+console.log(val1 % val2);
 
 //>, <, >=, <=, == ,!=  ------> Relational operators
 
-console.log(val1>17 ? "Hiii" : "Hello"); //---->ternary
+console.log(val1 > 17 ? "Hiii" : "Hello"); //---->ternary
 
 //&&, || ----> logical operators
 
-if(val2>4 || val1==10){
+if (val2 > 4 || val1 == 10) {
 
 }
 
@@ -105,7 +105,7 @@ var password = "admin@123"
 var seen = 7;
 
 //control variable
-switch(seen){
+switch (seen) {
     case 5:
         console.log("5 selected...");
         break;
@@ -127,7 +127,7 @@ switch(seen){
 
 var val3 = 89;
 
-val3+=5; //*=,/=,-=
+val3 += 5; //*=,/=,-=
 
 //val3 = val3 + 5;
 
@@ -157,7 +157,7 @@ console.log("Hello For-Loop");
 console.log("Hello For-Loop");
 
 
-for(var i = 0; i<5; i++){
+for (var i = 0; i < 5; i++) {
     console.log("Hello For-Loop");
 }
 
@@ -166,11 +166,11 @@ for(var i = 0; i<5; i++){
 var myVal = 4;
 
 //6 rounds
-for(var i = 0; i<3; i++){
-    if(myVal%2==0){
-        myVal+=3;
-    }else{
-        myVal+=2;
+for (var i = 0; i < 3; i++) {
+    if (myVal % 2 == 0) {
+        myVal += 3;
+    } else {
+        myVal += 2;
     }
 }
 
@@ -181,22 +181,30 @@ console.log(myVal);
 var dbUserName = "admin@gmail.com";
 var dbPassword = "admin@123";
 
-var userName = document.getElementById('email').value;
-var password = document.getElementById('password').value;
-
-if(userName==dbUserName && password==dbPassword){
-    alert("Login Success !");
-}else{
-    alert("Login Failed !");
-}
-
-
-function clearInputs(){
-    document.getElementById('email').value="";
-    document.getElementById('password').value="";
+function clearInputs() {
+    document.getElementById('email').value = "";
+    document.getElementById('password').value = "";
 }
 
 //a user can enter his username and password for three times.
 //if user entered username and password correctly alert 'login success'.
 //if not alert 'login failed' clear text inputs and give another chance to enter username and password.
-//when finshed 3 chances alert 'your account is loked'
+//when finshed 3 chances alert 'your account is locked'
+
+var rounds = 0;
+
+function onLogin() {
+    var userName = document.getElementById('email').value;
+    var password = document.getElementById('password').value;
+
+    if (userName == dbUserName && password == dbPassword) {
+        alert("Login Success !");
+    } else {
+        alert("Login Failed !");
+        clearInputs();
+        rounds++;
+        if (rounds == 3) {
+            alert("Your account locked !");
+        }
+    }
+}
