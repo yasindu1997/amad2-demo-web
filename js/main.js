@@ -119,3 +119,59 @@ switch(seen){
         console.log("Not Matched");
 }
 
+//user input month name ----> January, February, March,....
+
+//alert ----> Duruthu, Nawam, Madin....
+
+////////////////////////
+
+var val3 = 89;
+
+val3+=5; //*=,/=,-=
+
+//val3 = val3 + 5;
+
+console.log(val3);
+
+/////////////////////////
+
+var val4 = 9;
+
+//val4 = val4+1;
+
+//val4+=1;
+
+val4++; //increamnt ----> val4-- -------->decrement
+
+console.log(val4);
+
+//loops ----> for loop, while loop, do-while loop, for-each loops
+
+console.log("Hello For-Loop");
+console.log("Hello For-Loop");
+console.log("Hello For-Loop");
+console.log("Hello For-Loop");
+console.log("Hello For-Loop");
+console.log("Hello For-Loop");
+console.log("Hello For-Loop");
+console.log("Hello For-Loop");
+
+
+for(var i = 0; i<5; i++){
+    console.log("Hello For-Loop");
+}
+
+///////////////////////////////
+
+var myVal = 4;
+
+//6 rounds
+for(var i = 0; i<6; i++){
+    if(myVal%2==0){
+        myVal+=3;
+    }else{
+        myVal+=2;
+    }
+}
+
+console.log(myVal);
