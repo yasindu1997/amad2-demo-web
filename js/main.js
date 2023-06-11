@@ -195,3 +195,8 @@ function clearInputs(){
     document.getElementById('email').value="";
     document.getElementById('password').value="";
 }
+
+//a user can enter his username and password for three times.
+//if user entered username and password correctly alert 'login success'.
+//if not alert 'login failed' clear text inputs and give another chance to enter username and password.
+//when finshed 3 chances alert 'your account is loked'
