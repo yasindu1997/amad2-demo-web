@@ -166,7 +166,7 @@ for(var i = 0; i<5; i++){
 var myVal = 4;
 
 //6 rounds
-for(var i = 0; i<6; i++){
+for(var i = 0; i<3; i++){
     if(myVal%2==0){
         myVal+=3;
     }else{
