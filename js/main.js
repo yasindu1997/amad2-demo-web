@@ -208,3 +208,47 @@ function onLogin() {
         }
     }
 }
+
+//while loop
+
+//true,false,statement
+
+var myNum = 20;
+
+while(myNum>15){
+    console.log("Helloooooo");
+    myNum--;
+
+    if(true){
+        //break;
+    }
+}
+
+///array//////////////////////
+
+var studentMark = 89.6;
+
+var studentMarks = [34.5, 56.5, 78, 67.4, 34, 65]; //--> index starts with 0 ends with length-1 ---> 1024
+
+console.log(studentMarks[4]);
+
+//////////////////////////////
+
+// 0---->5(4)
+// 0---->8(7)
+
+for(var i=0; i<6; i++){
+    console.log("Value is "+studentMarks[i])
+}
+
+//mx value and min value in studentMarks array
+
+//get user's name from user ---> Yasindu
+//display charactors of that name like [Y,A,S,I,N,D,U]
+
+var balance = 80;
+
+do{
+    console.log("running.......");
+}while(balance>=56);
+
