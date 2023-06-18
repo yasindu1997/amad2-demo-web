@@ -126,7 +126,7 @@ const objSithara = {
 
 //arrays
 
-const cars = ["Toyota", "BMW", "Jeep", "Mazda", "Honda",87]
+const cars = ["Toyota", "BMW", "Jeep", "Mazda", "Honda",87,["Yasindu","Pasindu","Kavindu","Ravindu"]]
 console.log(cars);
 
 const marks = [];
@@ -147,9 +147,6 @@ for(const val of cars){
 for(const val in cars){
     console.log(val)
 }
-
-//////////////////////////
-
 
 
 
