@@ -108,6 +108,52 @@ const loadData = () => {
 
 loadData();
 
+/////////////////////////////
+
+//oop ---> object oriented programming
+
+const objSithara = {
+    name: "sithira rathanayaka", age: 25, address: "panadura",
+    favFood: "milk rice", favDrink: "milk", isSmoke: true
+}
+
+//json object
+
+/*{
+   "name":"yasindu",
+   "address":"panadura"
+}*/
+
+//arrays
+
+const cars = ["Toyota", "BMW", "Jeep", "Mazda", "Honda",87]
+console.log(cars);
+
+const marks = [];
+
+marks[0] = 45.6;
+marks[1] = 90.3;
+
+console.log(marks);
+
+//////////////////////////
+
+//for-each ----> arrays
+
+for(const val of cars){
+    console.log(val)
+}
+
+for(const val in cars){
+    console.log(val)
+}
+
+//////////////////////////
+
+
+
+
+
 
 
 
